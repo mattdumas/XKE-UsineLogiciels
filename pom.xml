@@ -2,17 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.springframework.samples</groupId>
-	<artifactId>org.springframework.samples.petclinic</artifactId>
+
+	<groupId>fr.xebia.xke</groupId>
+	<artifactId>samples-petclinic</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
 	<name>petclinic</name>
 	<packaging>war</packaging>
-	<version>1.0.0-SNAPSHOT</version>
+
 	<properties>
 		<spring.version>3.0.0.RELEASE</spring.version>
 		<slf4j.version>1.5.6</slf4j.version>
 	</properties>
-	<dependencies>
 
+	<dependencies>
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -187,12 +190,12 @@
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
-    		<groupId>org.jdom</groupId>
-    		<artifactId>com.springsource.org.jdom</artifactId>
-    		<version>1.1.0</version>
-    		<scope>runtime</scope>
+			<groupId>org.jdom</groupId>
+			<artifactId>com.springsource.org.jdom</artifactId>
+			<version>1.1.0</version>
+			<scope>runtime</scope>
 		</dependency>
-				
+
 		<!-- JAXB -->
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
@@ -226,6 +229,12 @@
 			<artifactId>selenium</artifactId>
 			<version>2.0b1</version>
 			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>testng</artifactId>
+					<groupId>org.testng</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 	</dependencies>
@@ -256,21 +265,18 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
 				<configuration>
 					<verbose>true</verbose>
-					<source>1.5</source>
-					<target>1.5</target>
+					<source>1.6</source>
+					<target>1.6</target>
 					<showWarnings>true</showWarnings>
 				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<configuration>
-					<includes>
-						<include>**/*Tests.java</include>
-					</includes>
-				</configuration>
+				<version>2.8.1</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

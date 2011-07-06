@@ -10,7 +10,7 @@ import org.junit.Test;
  *
  * @author Ken Krebs
  */
-public class OwnerTests {
+public class OwnerTest {
 
 	@Test
 	public void testHasPet() {

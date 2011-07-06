@@ -17,7 +17,7 @@ import org.springframework.samples.petclinic.aspects.UsageLogAspect;
  * @author Rod Johnson
  * @author Juergen Hoeller
  */
-public class EntityManagerClinicITests extends AbstractJpaClinicTests {
+public class EntityManagerClinicITest extends AbstractJpaClinicTest {
 
 	private UsageLogAspect usageLogAspect;
 

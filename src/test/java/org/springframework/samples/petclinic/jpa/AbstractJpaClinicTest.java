@@ -52,7 +52,7 @@ import org.springframework.test.jpa.AbstractJpaTests;
  * @author Sam Brannen
  * @see AbstractJpaTests
  */
-public abstract class AbstractJpaClinicTests extends AbstractJpaTests {
+public abstract class AbstractJpaClinicTest extends AbstractJpaTests {
 
 	protected Clinic clinic;
 

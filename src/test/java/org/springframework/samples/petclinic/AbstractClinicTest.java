@@ -81,7 +81,7 @@ import org.springframework.test.context.junit4.AbstractTransactionalJUnit4Spring
  * @author Sam Brannen
  */
 @ContextConfiguration
-public abstract class AbstractClinicTests extends AbstractTransactionalJUnit4SpringContextTests {
+public abstract class AbstractClinicTest extends AbstractTransactionalJUnit4SpringContextTests {
 
 	@Autowired
 	protected Clinic clinic;

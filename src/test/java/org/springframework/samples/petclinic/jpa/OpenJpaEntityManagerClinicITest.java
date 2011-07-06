@@ -13,7 +13,7 @@ package org.springframework.samples.petclinic.jpa;
  *
  * @author Juergen Hoeller
  */
-public class OpenJpaEntityManagerClinicITests extends EntityManagerClinicITests {
+public class OpenJpaEntityManagerClinicITest extends EntityManagerClinicITest {
 
 	@Override
 	protected String[] getConfigPaths() {
